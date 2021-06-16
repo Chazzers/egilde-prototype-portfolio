@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+        url('../fonts/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Light.woff2') format('woff2'),
+        url('../fonts/Poppins-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
+        url('../fonts/Poppins-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Black.woff2') format('woff2'),
+        url('../fonts/Poppins-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+	line-height: 1.5;
+	box-sizing: border-box;
+	font-family: 'Poppins';
+}
+
+h1 {
+	font-size: clamp(1.75em, 3vw, 2em);
+	font-weight: bold;
+	margin: 0.5em 0;
+}
+
+h2 {
+	font-size: clamp(1.5em, 2.75vw, 1.75em);
+	font-weight: 500;
+	margin: 0.5em 0;
+}
+
+h3 {
+	font-size: clamp(1.25em, 2.5vw, 1.5em);
+	font-weight: 500;
+	margin: 0.5em 0;
+}
+
+h4 {
+	font-size: clamp(1.10em, 2.25vw, 1.25em);
+	font-weight: 500;
+	margin: 0.5em 0;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 300;
+	margin: 0.5em 0;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+	font-size: 1em;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+body { 
+	background-color: #EBEAEF;
+	margin: 0;
+}
+
+header h1 {
+	background-color: #fff;
+	margin: 0;
+	padding: 1em 2rem;
+}
+
+main {
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 50vh;
+	background: no-repeat center center / cover url(../images/hero-img.jpg);
+	position: relative;
+	color: #fff;
+}
+
+main > * {
+	position: relative;
+	z-index: 2;
+}
+
+main::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 0;
+}
+
+.design-challenge {
+	margin: 1rem;
+	min-height: 30vh;
+}
+
+.design-challenge article header {
+	margin: 1rem;
+}
+
+.design-challenge article .body-text {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.design-challenge article section {
+	max-width: 25rem;
+	margin: 1rem;
+}
+
+.opdrachtgevers {
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+	min-height: 30vh;
+	background-color: #293133;
+	color: #ffff;
+	flex-wrap: wrap;
+}
+
+.opdrachtgevers header {
+	flex: 1 1 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.opdrachtgevers section {
+	flex: 1 1 50%;
+	min-width: 200px;
+}
+
+.opdrachtgevers section img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+footer {
+	display: flex;
+	padding: 2rem;
+	min-height: 30vh;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+footer div {	
+	flex: 1 1 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-width: 10rem;
+}
+
+a {
+	padding: 1rem;
+	background-color: #5E6099;
+	border-radius: 100px;
+	color: white;
+	text-align: center;
+}
